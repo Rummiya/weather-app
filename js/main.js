@@ -54,7 +54,7 @@ async function submitHandler(e) {
 
 // Получение координат города
 async function getGeo(name) {
-	const geoURL = `http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=5&appid=${API_KEY}`;
+	const geoURL = `https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=5&appid=${API_KEY}`;
 	const response = await fetch(geoURL);
 	const data = await response.json();
 
