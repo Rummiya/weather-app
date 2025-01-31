@@ -73,20 +73,22 @@ async function getWeather(lat, lon) {
 // Рендер погоды
 function renderWeatherData(data) {
 	// Отображаем блоки с информацией
-	document.querySelector('.weather__info').classList.remove('none');
-	document.querySelector('.weather__details').classList.remove('none');
+	// document.querySelector('.weather__info').classList.remove('none');
+	// document.querySelector('.weather__details').classList.remove('none');
 
 	// Отображаем информацию о погоде
 	const $temp = document.querySelector('.weather__temp'),
 		$city = document.querySelector('.weather__city'),
 		$humidity = document.querySelector('#humidity'),
 		$speed = document.querySelector('#speed'),
-		$image = document.querySelector('.weather__img');
+		$image = document.querySelector('.weather__img'),
+		$name = document.querySelector('.weather__name');
 
 	$temp.innerText = Math.round(data.temp) + '°c';
 	$city.innerText = data.name;
 	$humidity.innerText = data.humidity + '%';
 	$speed.innerText = data.speed + ' km/h';
+	$name.innerText = data.weather;
 
 	const imageNames = {
 		Clouds: 'clouds',

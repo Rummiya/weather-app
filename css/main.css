@@ -2,97 +2,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
-    font-family: 'Inter';
+	font-family: 'Inter';
 
-    background-color: #282828;
-    min-height: 100vh;
+	background-color: #282828;
+	min-height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .none {
-    display: none !important;
+	display: none !important;
 }
 
 .weather {
-    width: 320px;
+	width: 320px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    border-radius: 16px;
-    background: linear-gradient(128deg, #42D2A6 0%, #007991 100%);
+	border-radius: 16px;
+	background: linear-gradient(128deg, #42d2a6 0%, #007991 100%);
 
-    padding: 30px 24px;
+	padding: 30px 24px;
 }
 
 .form {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .form__input {
-    width: 220px;
-    
-    border-radius: 60px 0 0 60px;
-    background-color: #fff;
-    padding: 10px 0px 11px 20px;
+	width: 220px;
+
+	border-radius: 60px 0 0 60px;
+	background-color: #fff;
+	padding: 10px 0px 11px 20px;
 }
 
 .form__btn {
-    padding: 8px 15px 8px 0;
-    border-radius: 0 60px 60px 0;
-    background-color: #fff;
+	padding: 8px 15px 8px 0;
+	border-radius: 0 60px 60px 0;
+	background-color: #fff;
 }
 
 .weather__info {
-    text-align: center;
-    margin: 40px 0;
+	text-align: center;
+	margin: 40px 0;
+}
+
+.weather__name {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 .weather__img {
-    width: 120px;
-    margin-bottom: 20px;
+	width: 160px;
+	margin-bottom: 20px;
 }
 
 .weather__temp {
-    color: #fff;
-    font-size: 56px;
-    font-weight: 700;
+	color: #fff;
+	font-size: 56px;
+	font-weight: 700;
 }
 
 .weather__city {
-    color: #fff;
-    font-size: 38px;
-    font-weight: 500;
-    text-align: center;
+	color: #fff;
+	font-size: 38px;
+	font-weight: 500;
+	text-align: center;
 }
 
 .weather__details {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+	display: flex;
+	align-items: center;
+	gap: 50px;
 }
 
 .details {
-    display: flex;
+	display: flex;
 }
 
 .details__icon {
-    width: 31px;
+	width: 31px;
 }
 
 .details__value {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
 }
 .details__title {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
 }
